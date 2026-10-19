@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClimAPP</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>ClimAPP</h1>
+    <p>Esta aplicacion te permite ver diferentes datos meteorológicos de diversas ciudades de Perú</p>
+  </header>
+
+  <main>
+    <section class="buscador" style="text-align: center;">
+      <select name="" id="selectorCiudad">
+        <option value="lima">Lima</option>
+        <option value="callao">Callao</option>
+        <option value="arequipa">Arequipa</option>
+        <option value="trujillo">Trujillo</option>
+        <option value="chiclayo">Chiclayo</option>
+        <option value="piura">Piura</option>
+      </select>
+
+      <button id="btnConsultar">Ver Clima</button>
+    </section>
+
+    <p id="mensajeError" class="error"></p>
+
+    <section id="resultado"></section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="appcomplemento.js"></script>
+</body>
+</html>
